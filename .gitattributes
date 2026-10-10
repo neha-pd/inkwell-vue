@@ -1,0 +1,4 @@
+# Preserve upstream license text and generated bundle string literals verbatim.
+THIRD_PARTY_NOTICES.md -whitespace
+docs/THIRD_PARTY_NOTICES.md -whitespace
+docs/assets/* -whitespace

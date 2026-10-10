@@ -1,0 +1,11 @@
+[
+  "Labeled multiline textbox; toolbar roving Arrow/Home/End focus.",
+  "Selection survives toolbar action; bold/italic emit HTML; undo and redo restore formatting.",
+  "Heading 2/3 and bullet/numbered list commands transform document structure.",
+  "Link validation rejects executable URL; valid link round-trip, removal and Escape focus return.",
+  "Reactive readonly blocks typing/commands; disabled removes textbox tab stop; editability restores.",
+  "External v-model sanitization removes scripts, handlers, images and encoded unsafe URLs.",
+  "Rich HTML clipboard paste preserves allowed formatting and drops unsafe content.",
+  "HTML copy/export match v-model and imported output round-trips.",
+  "390px mobile has no horizontal overflow; no runtime errors."
+]

@@ -1,1 +1,63 @@
-{"name":"@neha-pd/inkwell-vue","version":"0.1.0","description":"A Vue 3 rich-text editor prototype built on Tiptap and ProseMirror","type":"module","license":"MIT","author":"Neha Desai","repository":{"type":"git","url":"https://github.com/neha-pd/inkwell-vue.git"},"homepage":"https://neha-pd.github.io/inkwell-vue/","files":["dist","README.md","LICENSE","THIRD_PARTY_NOTICES.md"],"main":"./dist/inkwell-vue.js","module":"./dist/inkwell-vue.js","types":"./dist/index.d.ts","exports":{".":{"types":"./dist/index.d.ts","import":"./dist/inkwell-vue.js"},"./style.css":"./dist/inkwell-vue.css"},"sideEffects":["**/*.css"],"scripts":{"dev":"vite --host 127.0.0.1 --port 8842","build":"vite build --mode library && cp src/index.d.ts dist/index.d.ts","build:demo":"vite build","prepack":"npm run build"},"peerDependencies":{"vue":"^3.5.0"},"dependencies":{"@tiptap/vue-3":"3.31.4","@tiptap/starter-kit":"3.31.4","@tiptap/pm":"3.31.4","dompurify":"^3.3.0"},"devDependencies":{"vue":"^3.5.0","vite":"^8.0.0","@vitejs/plugin-vue":"^6.0.0"}}
+{
+  "name": "@neha-pd/inkwell-vue",
+  "version": "0.2.0",
+  "description": "A Vue 3 rich-text editor with tables, tasks, images, search and document exports, built on Tiptap",
+  "type": "module",
+  "license": "MIT",
+  "author": "Neha Desai",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neha-pd/inkwell-vue.git"
+  },
+  "homepage": "https://neha-desai.de5.net/inkwell/",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "main": "./dist/inkwell-vue.js",
+  "module": "./dist/inkwell-vue.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/inkwell-vue.js"
+    },
+    "./style.css": "./dist/inkwell-vue.css"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 8842",
+    "build": "vite build --mode library && cp src/index.d.ts dist/index.d.ts",
+    "build:demo": "vite build",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "dependencies": {
+    "@tiptap/extension-character-count": "^3.31.4",
+    "@tiptap/extension-highlight": "^3.31.4",
+    "@tiptap/extension-image": "^3.31.4",
+    "@tiptap/extension-list": "^3.31.4",
+    "@tiptap/extension-placeholder": "^3.31.4",
+    "@tiptap/extension-subscript": "^3.31.4",
+    "@tiptap/extension-superscript": "^3.31.4",
+    "@tiptap/extension-table": "^3.31.4",
+    "@tiptap/extension-text-align": "^3.31.4",
+    "@tiptap/extension-text-style": "^3.31.4",
+    "@tiptap/markdown": "^3.31.4",
+    "@tiptap/pm": "3.31.4",
+    "@tiptap/starter-kit": "3.31.4",
+    "@tiptap/vue-3": "3.31.4",
+    "dompurify": "^3.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "vite": "^8.0.0",
+    "vue": "^3.5.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "version": "0.2.0",
+  "isolated_install": true,
+  "ssr_render": true,
+  "browser_edit": true,
+  "runtime_errors": []
+}

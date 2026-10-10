@@ -1,0 +1,14 @@
+[
+  "Extended formatting, clearing, heading1 and alignment preserve selected content.",
+  "Checklist toggles and checked state survives sanitized round-trip.",
+  "Table insertion, row/column editing, deletion and HTML round-trip.",
+  "Code block, quotation and divider commands.",
+  "Image insertion rejects unsafe URL, requires description and accepts bounded raster upload.",
+  "Case-insensitive search, replace-all and atomic undo.",
+  "Sanitizer rejects active attributes, URL-bearing CSS, SVG data and excessive table spans while retaining safe styles.",
+  "Markdown file import preserves heading/bold; Markdown and JSON exports contain actual document.",
+  "Explicit local draft save/restore works without network persistence.",
+  "Readonly prevents expanded toolbar, styling and file import mutations.",
+  "Focus mode toggles and Escape exits.",
+  "390px layout, dark widget rendering and no runtime errors across extended interactions."
+]

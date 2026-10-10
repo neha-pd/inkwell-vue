@@ -1,0 +1,33 @@
+{
+  "version": "0.3.0",
+  "at": "2026-10-10T23:48:06.644218+00:00",
+  "design_references": "artifacts/design-references/README.md",
+  "checks": {
+    "original": 9,
+    "extended": 12,
+    "contextual": 10,
+    "isolated_package_install": true,
+    "SSR_placeholder": true,
+    "package_keyboard_edit": true,
+    "custom_controls": 7,
+    "total_browser_checks": 38,
+    "axe_light_dark_default_listbox": "0 violations in WCAG2A/AA/2.1AA scans; see axe-v3.json"
+  },
+  "screenshots": [
+    "inkwell-v3-desktop.png",
+    "inkwell-v3-mobile.png",
+    "inkwell-v3-dark-mobile.png",
+    "inkwell-v3-floating.png",
+    "inkwell-v3-link.png",
+    "inkwell-v3-context-mobile.png",
+    "inkwell-v3-context-dark.png"
+  ],
+  "package_sha256": "e6c875a1694808dbac1d2898bdf0a6138e36b3a161d5d5ffdf892f2b786b6b98",
+  "limitations": [
+    "Single-user preview; no collaboration/server AI/DOCX/PDF",
+    "Full editor demo JS approx716KB uncompressed,224KBgzip; Vite chunk warning retained",
+    "Automated keyboard/mobile checks not full screen-reader/IME/Nuxt hydration audit"
+  ],
+  "publication": "Not published; root owns review and publication",
+  "review_correction": "Replaced stock dropdowns with keyboard listboxes, compact inspector, styled switches/upload controls, segmented exports"
+}

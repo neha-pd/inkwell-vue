@@ -1,0 +1,13 @@
+{
+  "passed": 7,
+  "checks": [
+    "Structure menu opens by keyboard, moves active option and applies heading with trigger focus restored.",
+    "Custom font and size listboxes apply actual document styles, including typeahead and End.",
+    "Listboxes dismiss on Escape/outside/Tab, preserving logical keyboard navigation.",
+    "Segmented export radio group produces real plain-text document.",
+    "Styled switch retains native checkbox operation; upload trigger retains the real file input and import behavior.",
+    "Collapsed inspector stays within the writing canvas height rather than extending a blank column.",
+    "390px light/dark layouts and custom menu bounds pass without horizontal overflow."
+  ],
+  "runtime_errors": []
+}

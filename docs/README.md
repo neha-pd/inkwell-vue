@@ -1,6 +1,6 @@
 # Inkwell Vue
 
-A reusable Vue 3 rich-text editor built on Tiptap and ProseMirror. The 0.2 preview adds structured documents, tables, images, search, and portable exports to the original editing component.
+A reusable Vue 3 rich-text editor built on Tiptap and ProseMirror. The 0.3 preview adds selection tools, a keyboard-accessible context menu and an inline link popover, alongside structured documents, tables, images, search and portable exports.
 
 [Open the playground](https://neha-desai.de5.net/inkwell/) · [Neha’s portfolio](https://neha-desai.de5.net/)
 
@@ -16,6 +16,7 @@ A reusable Vue 3 rich-text editor built on Tiptap and ProseMirror. The 0.2 previ
 | Editing | Undo/redo, case-insensitive find/replace within text spans, focus mode, words/characters, placeholder |
 | Integration | HTML v-model, change events, typed public methods, reactive read-only/disabled states |
 | Documents | HTML/Markdown/text import; HTML/Markdown/text/Tiptap JSON export in the demo; explicit browser-local draft save/restore |
+| Contextual editing | Selection toolbar with word count; right-click or Shift+F10 menu; retained-selection link popover; viewport clamping |
 | Keyboard | Roving formatting toolbar, labeled controls, link/image forms, Escape dismissal, focus-mode tab containment |
 
 The editor is a single-user preview, not a complete document platform. Collaboration, comments, tracked changes, DOCX/PDF conversion, server uploads, permissions and AI generation are **not implemented**. Syntax highlighting is not included. Markdown does not preserve all HTML styling or complex table layouts. Find/replace matches within individual formatted text spans, not across mark boundaries. Mobile IME, screen-reader audits and full Nuxt hydration still need wider testing.
@@ -29,7 +30,7 @@ npm install
 npm run build
 npm pack
 # In your Vue application:
-npm install ./neha-pd-inkwell-vue-0.2.0.tgz
+npm install ./neha-pd-inkwell-vue-0.3.0.tgz
 ```
 
 ```vue
@@ -71,6 +72,8 @@ npm run build        # library and type declarations
 npm run build:demo   # static docs/
 python tests/browser.py
 python tests/extended.py
+python tests/contextual.py
+python tests/controls.py
 ```
 
 Python browser tests require Playwright and Chromium. `INKWELL_URL` can target the built or deployed demo. Checks exercise actual editing, clipboard paste, read-only state, sanitization, table/list round trips, import/export, local drafts and narrow viewports. Screenshots in artifacts are from the running demo. Passing automated checks does not establish WCAG conformance.
@@ -82,4 +85,14 @@ Python browser tests require Playwright and Chromium. `INKWELL_URL` can target t
 - [Tiptap Markdown](https://tiptap.dev/docs/editor/markdown)
 - MIT license. Dependencies and bundled font licensing are recorded in THIRD_PARTY_NOTICES.md.
 
+### Contextual editing
+
+Select text to reveal the compact formatting toolbar. Right-click within the editable document, or press Shift+F10 / the Context Menu key, to open formatting actions. Arrow keys, Home and End navigate the menu; Enter activates an action. Escape dismisses contextual tools and returns focus to the document. Scrolling closes the context/link menu; selection tools follow the range. Read-only and disabled editors retain the browser’s native context menu. Parent content replacement dismisses stale contextual selections.
+
+The warm paper/copper demo uses self-hosted Manrope and official Phosphor Vue icons. The editor uses native labeled selects for predictable keyboard and assistive-technology behavior.
+
 Built with AI assistance. No customer adoption or production-readiness claims.
+
+### 0.3 control refinement
+
+Structure, font, size and alignment use a shared custom listbox with arrow/Home/End navigation, typeahead, Escape, Tab dismissal and outside-click handling. The demo inspector uses native checkbox switches, a radio-group export selector and an accessible styled file input. Secondary import and local-draft controls are expandable. Selected document ranges are retained when applying formatting. Reference sources and original design decisions are recorded in `artifacts/design-references/README.md`.

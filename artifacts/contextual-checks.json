@@ -1,0 +1,12 @@
+[
+  "Selection toolbar exposes selected word count and applies bold to retained range.",
+  "Floating link popover retains the selected text while entering a URL.",
+  "Shift+F10 opens menu; arrow navigation and Enter apply formatting.",
+  "Keyboard context clear formatting removes marks without replacing text.",
+  "Escape closes menu and returns focus to unchanged document range.",
+  "Pointer right-click opens context menu; outside click dismisses.",
+  "Readonly/disabled close open menus and do not intercept the native context action.",
+  "390px right-click menu clamps to viewport without page overflow.",
+  "Context surfaces render in dark/reduced-motion mode without runtime errors.",
+  "Sample chooser loads a real structured document; entered title names the exported file."
+]

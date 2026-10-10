@@ -1,0 +1,40 @@
+{
+  "verified_at": "2026-10-10T23:06:26.682728+00:00",
+  "url": "https://neha-desai.de5.net/inkwell/",
+  "assets": [
+    {
+      "path": "index.html",
+      "sha256": "bd73db43cb016698f899fd585a0422d35aecc281438af739d31d2e1cc78533c7",
+      "bytes": 508
+    },
+    {
+      "path": "README.md",
+      "sha256": "e8d52a312792696063afbf5d35e30bb6e534863891f5f511daf1380b686c6dad",
+      "bytes": 5308
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cf7ffcf66e692af26b3e9423ff743b2416ffebca01fb107ff2a1af0bc5c16128",
+      "bytes": 1067
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "13ef08562d36cf6109e1559625d999c521c9e84e2c75ca08587e9e572ab45e63",
+      "bytes": 264876
+    },
+    {
+      "path": "inkwell-vue-source.zip",
+      "sha256": "c42ab317ce22a53c9ed1db162cecd887e8f8a82b550a19c9476b3367a9807962",
+      "bytes": 134686
+    },
+    {
+      "path": "neha-pd-inkwell-vue-0.2.0.tgz",
+      "sha256": "c1ca222955f4260588d3e51233a04b19d942de204e26cda79f3209582f1f72de",
+      "bytes": 37619
+    }
+  ],
+  "live_extended_test_groups": 12,
+  "local_total_test_groups": 21,
+  "independent_consumer_browser_and_ssr": true,
+  "npm_registry_published": false
+}

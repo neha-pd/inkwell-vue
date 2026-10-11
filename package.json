@@ -1,6 +1,6 @@
 {
   "name": "@neha-pd/inkwell-vue",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A Vue 3 rich-text editor with tables, tasks, images, search and document exports, built on Tiptap",
   "type": "module",
   "license": "MIT",

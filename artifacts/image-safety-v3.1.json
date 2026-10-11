@@ -1,0 +1,6 @@
+[
+  "Undescribed HTTPS images are removed even after clipboard URL normalization.",
+  "Described HTTPS image retained while active attributes and unsafe styles removed.",
+  "JavaScript and SVG sources removed even with an alt description.",
+  "Bounded described PNG data image preserved."
+]

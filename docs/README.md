@@ -30,7 +30,7 @@ npm install
 npm run build
 npm pack
 # In your Vue application:
-npm install ./neha-pd-inkwell-vue-0.3.0.tgz
+npm install ./neha-pd-inkwell-vue-0.3.1.tgz
 ```
 
 ```vue
@@ -96,3 +96,5 @@ Built with AI assistance. No customer adoption or production-readiness claims.
 ### 0.3 control refinement
 
 Structure, font, size and alignment use a shared custom listbox with arrow/Home/End navigation, typeahead, Escape, Tab dismissal and outside-click handling. The demo inspector uses native checkbox switches, a radio-group export selector and an accessible styled file input. Secondary import and local-draft controls are expandable. Selected document ranges are retained when applying formatting. Reference sources and original design decisions are recorded in `artifacts/design-references/README.md`.
+
+Patch 0.3.1 applies the image-description requirement consistently to pasted/imported HTML as well as the image dialog. Undescribed images are removed; HTTPS or bounded raster images with meaningful alt text remain supported.

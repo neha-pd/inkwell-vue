@@ -36,6 +36,13 @@ export function sanitizeHTML(value = '') {
   if (href) { a.setAttribute('href', href); a.setAttribute('rel', 'noopener noreferrer') }
   else a.replaceWith(...a.childNodes)
  })
- template.content.querySelectorAll('img').forEach(img=>{ const src=safeImage(img.getAttribute('src')||''); if(!src) img.remove(); else {img.setAttribute('src',src);img.setAttribute('alt',img.getAttribute('alt')||'')} })
+ template.content.querySelectorAll('img').forEach(img=>{
+  const src=safeImage(img.getAttribute('src')||'')
+  const alt=(img.getAttribute('alt')||'').trim()
+  // Clipboard HTML may resolve relative sources against an HTTPS page before
+  // reaching us. Apply the same description requirement as the image dialog.
+  if(!src || !alt) img.remove()
+  else { img.setAttribute('src',src);img.setAttribute('alt',alt) }
+ })
  return template.innerHTML
 }
